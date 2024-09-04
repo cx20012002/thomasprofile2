@@ -22,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={big_shoulder.className}>
-        <div className='p-10'>{children}</div>
+        <div className='relative flex flex-col flex-nowrap items-center justify-start'>
+          {children}
+        </div>
       </body>
     </html>
   );
