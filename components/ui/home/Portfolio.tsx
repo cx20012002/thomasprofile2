@@ -11,7 +11,7 @@ const Portfolio = () => {
     offset: ['start end', 'end start'],
   });
 
-  const cycle = useTransform(scrollYProgress, [0.3, 1], [0, 3]); // 0 到 3 循环
+  const cycle = useTransform(scrollYProgress, [0.3, 0.8], [0, 2.5]); // 0 到 3 循环
   const opacitySpan1 = useTransform(cycle, (value) =>
     Math.floor(value) % 3 === 0 ? 1 : 0.5
   );

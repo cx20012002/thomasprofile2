@@ -7,7 +7,7 @@ const About = () => {
   const { scrollYProgress } = useScroll({
 
   });
-  const x = useTransform(scrollYProgress, [0, 1], [0, -550]);
+  const x = useTransform(scrollYProgress, [0, 1], [0, -1050]);
   const services = ['Design', 'Branding', 'Coding', 'Support'];
 
   return (

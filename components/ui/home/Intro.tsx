@@ -12,9 +12,9 @@ import { useRef } from 'react';
 
 const Intro = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, -250]);
-  const x2 = useTransform(scrollYProgress, [0, 1], [0, 250]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
+  const x = useTransform(scrollYProgress, [0, 1], [0, -650]);
+  const x2 = useTransform(scrollYProgress, [0, 1], [0, 650]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.65]);
 
   return (
     <motion.section
