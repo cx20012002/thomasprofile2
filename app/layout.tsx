@@ -1,12 +1,19 @@
 import type { Metadata } from 'next';
-import { Big_Shoulders_Display } from 'next/font/google';
+import { Big_Shoulders_Display, Manrope } from 'next/font/google';
 import './globals.css';
+import clsx from 'clsx';
+import Footer from '@/components/ui/Footer';
 
-const big_shoulder = Big_Shoulders_Display({
+const bigShoulder = Big_Shoulders_Display({
   subsets: ['latin'],
-  weight: ['400', '700', '900'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-bigShoulder',
+});
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -21,9 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={big_shoulder.className}>
-        <div className='relative flex flex-col flex-nowrap items-center justify-start'>
+      <body className={clsx(bigShoulder.variable, manrope.variable)}>
+        <div className='relative flex flex-col flex-nowrap items-center justify-start p-5 sm:p-10'>
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

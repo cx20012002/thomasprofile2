@@ -85,4 +85,13 @@
   body {
     @apply bg-background text-foreground;
   }
+  .text-stroke {
+    -webkit-text-stroke: 3px white;
+  }
+  .custom-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .custom-cursor {
+    cursor: url('/cursor2.png'), auto;
+  } 
 }

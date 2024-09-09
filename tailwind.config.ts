@@ -58,8 +58,23 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
-  		}
+  			},
+  		},
+			fontFamily: {
+				bigShoulder: ['var(--font-bigShoulder)'],
+				manrope: ['var(--font-manrope)'],
+			},
+			fontWeight: {
+				'thin': '100',
+				'extralight': '200',
+				'light': '300',
+				'normal': '400',
+				'medium': '500',
+				'semibold': '600',
+				'bold': '700',
+				'extrabold': '800',
+				'black': '900',
+			},
   	}
   },
   plugins: [require("tailwindcss-animate")],
